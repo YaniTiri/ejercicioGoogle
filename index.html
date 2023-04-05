@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        #linksHeader{
+            display: flex;
+            /*float: right;*/
+            flex-direction: row-reverse;
+            padding: 10px;
+            margin-right: 100px;
+            height: 60px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        #link1{
+            padding-left: 10px;
+            
+        }
+        a:link{text-decoration: none;}
+        a:hover{text-decoration: underline;}
+        #contenido{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: calc(100vh - 286px);
+            padding-top: 200px;
+            min-width: fit-content;
+        }
+        #formularioB{
+            display: flex;
+            align-items: center;
+        }
+        #busqueda{
+            border-radius: 10px;
+            border-style: outset;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width:286px;
+            height: 20px; ;
+        }
+        #boton1{
+            padding: 5px;
+            margin: 0 0 0 20px;
+        }
+    </style>
+    <title>Google</title>
+</head>
+<body>
+   <header>
+    <div id="linksHeader">
+        <div id="link1">  
+            <a href="https://mail.google.com/mail/&ogbl" target="_self" rel="noopener noreferrer">Gmail</a> 
+        </div>
+        <div id="link1">
+            <a href="https://www.google.com.ar/imghp?hl=es&ogbl" target="_self" rel="noopener noreferrer">Imágenes</a> 
+        </div>       
+    </div>
+
+   </header>
+   <main>
+    <div id="contenido">
+        <div>
+            <img src="logo.jpg" alt="Google">
+        </div>
+        <div id="formularioB">
+            <form action="" method="get">
+                <div id="buscador">
+                 <input type="text" name="busqueda" id="busqueda" placeholder="">
+                </div>
+                <div id="botones">
+                    <input type="submit" value="Buscar con Google" id="boton1">
+                    <input type="submit" value="Voy a tener suerte" id="boton1">
+                </div>
+            </form>
+        </div>
+    </div>
+   </main>
+   <footer></footer>
+</body>
+</html>
